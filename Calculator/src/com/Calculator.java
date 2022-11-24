@@ -212,29 +212,29 @@ public class Calculator {
 					total = num1 + num2;
 					result = String.format("%.1f + %.1f", num1, num2);
 					labelResult = String.format("%.2f",total);
-					textField.setText(result);
-					lblNewLabel.setText(labelResult);
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
 				}
 				if(operation == "-") {
 					total = num1 - num2;
 					result = String.format("%.1f - %.1f", num1, num2);
 					labelResult = String.format("%.2f",total);
-					textField.setText(result);
-					lblNewLabel.setText(labelResult);
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
 				}
 				if(operation == "*") {
 					total = num1 * num2;
 					result = String.format("%.1f * %.1f", num1, num2);
 					labelResult = String.format("%.2f",total);
-					textField.setText(result);
-					lblNewLabel.setText(labelResult);
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
 				}
 				if(operation == "/") {
 					total = num1 / num2;
 					result = String.format("%.1f / %.1f", num1, num2);
 					labelResult = String.format("%.2f",total);
-					textField.setText(result);
-					lblNewLabel.setText(labelResult);
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
 				}
 			}
 		});
