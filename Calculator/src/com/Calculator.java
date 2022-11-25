@@ -50,7 +50,8 @@ public class Calculator {
 	private void initialize() {
 		//initializing frame
 		frame = new JFrame();
-		frame.setBounds(100, 100, 442, 521); //bounds for frame of calculator
+		//frame.setBounds(100, 100, 442, 521); //bounds for frame of calculator
+		frame.setBounds(100, 100, 442, 521);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
