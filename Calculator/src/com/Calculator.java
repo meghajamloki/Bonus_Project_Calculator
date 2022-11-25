@@ -13,6 +13,7 @@ import java.awt.SystemColor;
 import javax.swing.SwingConstants;
 import javax.swing.JLabel;
 
+
 public class Calculator {
 
 	private JFrame frame;
@@ -50,7 +51,8 @@ public class Calculator {
 	private void initialize() {
 		//initializing frame
 		frame = new JFrame();
-		frame.setBounds(100, 100, 442, 521); //bounds for frame of calculator
+		frame.setBounds(100, 100, 450, 600); //bounds for frame of calculator
+		//frame.setBounds(400, 500, 642, 621); //bounds for frame of calculator
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -236,6 +238,38 @@ public class Calculator {
 					textField.setText(labelResult);
 					lblNewLabel.setText(result);
 				}
+				if(operation == "log") {
+					total = Math.log10(num1);
+					result = String.format("log(%.1f) ", num1);
+					labelResult = String.format("%.2f",total);
+					textField.setText("log("+textField.getText()+")");
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
+				}
+				if(operation == "sqrt") {
+					total = Math.sqrt(num1);
+					result = String.format("sqrt(%.1f) ", num1);
+					labelResult = String.format("%.2f",total);
+					textField.setText("sqrt("+textField.getText()+")");
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
+				}
+				if(operation == "ln") {
+					total = Math.log(num1);
+					result = String.format("ln(%.1f) ", num1);
+					labelResult = String.format("%.2f",total);
+					textField.setText("ln("+textField.getText()+")");
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
+				}
+				if(operation == "pow") {
+					total = Math.pow(num1,num2);
+					result = String.format("power(%.1f,%.1f)", num1, num2);
+					labelResult = String.format("%.2f",total);
+					textField.setText("pow("+textField.getText()+")");
+					textField.setText(labelResult);
+					lblNewLabel.setText(result);
+				}
 			}
 		});
 		btntEqual.setFont(new Font("Calibri", Font.BOLD, 19));
@@ -322,6 +356,55 @@ public class Calculator {
 		btnBack.setBounds(200, 136, 85, 60);
 		frame.getContentPane().add(btnBack); //adding button to frame
 		
+		//button with  Logsign
+		JButton btnlog = new JButton("log");
+		btnlog.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {	
+				//textField.setText("log");
+				//num1 = Double.parseDouble(textField.getText());
+				num1 =Integer.parseInt(textField.getText());
+				
+				operation ="log";}
+		});
+		btnlog.setFont(new Font("Calibri", Font.BOLD, 19));
+		//btnlog.setBounds(200, 136, 85, 60);
+		btnlog.setBounds(10,480, 85, 60);
+		frame.getContentPane().add(btnlog); //adding button to frame
+		
+		//button with  Squareroot
+		JButton btnsqrt = new JButton("sqrt");
+		btnsqrt.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {	
+				num1 =Integer.parseInt(textField.getText());			
+				operation ="sqrt";}
+		});
+		btnsqrt.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnsqrt.setBounds(105,480, 85, 60);
+		frame.getContentPane().add(btnsqrt); //adding button to frame
+		
+		//button with  log with base e
+		JButton btnln = new JButton("ln");
+		btnln.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {	
+				num1 =Integer.parseInt(textField.getText());			
+				operation ="ln";}
+		});
+		btnln.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnln.setBounds(200,480, 85, 60);
+		frame.getContentPane().add(btnln); //adding button to frame
+		
+
+		//button with PowerOf
+		JButton btnpow = new JButton("pow");
+		btnpow.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {	
+				num1 =Integer.parseInt(textField.getText());	
+				textField.setText("");
+				operation ="pow";}
+		});
+		btnpow.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnpow.setBounds(295,480, 127, 60);
+		frame.getContentPane().add(btnpow); //adding button to frame
 	
 	}
 }
