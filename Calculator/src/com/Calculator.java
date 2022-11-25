@@ -55,7 +55,7 @@ public class Calculator {
 		frame.getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setFont(new Font("Calibri", Font.BOLD, 19));
+		lblNewLabel.setFont(new Font("Verdana", Font.BOLD, 19));
 		lblNewLabel.setForeground(Color.BLUE);
 		lblNewLabel.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNewLabel.setBounds(10, 92, 408, 34);
@@ -65,7 +65,7 @@ public class Calculator {
 		textField.setHorizontalAlignment(SwingConstants.RIGHT);
 		textField.setBackground(SystemColor.text);
 		textField.setEditable(false);
-		textField.setFont(new Font("Calibri", Font.BOLD, 32));
+		textField.setFont(new Font("Verdana", Font.BOLD, 32));
 		textField.setBounds(10, 10, 408, 73);
 		frame.getContentPane().add(textField); //adding button to frame
 		textField.setColumns(10);
@@ -79,7 +79,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn7.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn7.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn7.setBounds(10, 206, 85, 60);
 		frame.getContentPane().add(btn7); //adding button to frame
 		
@@ -91,7 +91,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn4.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn4.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn4.setBounds(10, 276, 85, 60);
 		frame.getContentPane().add(btn4); //adding button to frame
 		
@@ -103,7 +103,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn1.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn1.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn1.setBounds(10, 346, 85, 60);
 		frame.getContentPane().add(btn1); //adding button to frame
 		
@@ -115,7 +115,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn8.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn8.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn8.setBounds(105, 206, 85, 60);
 		frame.getContentPane().add(btn8); //adding button to frame
 		
@@ -127,7 +127,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn5.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn5.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn5.setBounds(105, 276, 85, 60);
 		frame.getContentPane().add(btn5); //adding button to frame
 		
@@ -139,7 +139,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn2.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn2.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn2.setBounds(105, 346, 85, 60);
 		frame.getContentPane().add(btn2); //adding button to frame
 		
@@ -151,7 +151,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn9.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn9.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn9.setBounds(200, 206, 85, 60);
 		frame.getContentPane().add(btn9); //adding button to frame
 		
@@ -163,7 +163,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn6.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn6.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn6.setBounds(200, 276, 85, 60);
 		frame.getContentPane().add(btn6); //adding button to frame
 		 
@@ -175,7 +175,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn3.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn3.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn3.setBounds(200, 346, 85, 60);
 		frame.getContentPane().add(btn3); //adding button to frame
 		
@@ -187,7 +187,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btndot.setFont(new Font("Calibri", Font.BOLD, 19));
+		btndot.setFont(new Font("Verdana", Font.BOLD, 19));
 		btndot.setBounds(200, 413, 85, 60);
 		frame.getContentPane().add(btndot); //adding button to frame
 		
@@ -199,7 +199,7 @@ public class Calculator {
 				textField.setText(num);
 			}
 		});
-		btn0.setFont(new Font("Calibri", Font.BOLD, 19));
+		btn0.setFont(new Font("Verdana", Font.BOLD, 19));
 		btn0.setBounds(10, 413, 180, 60);
 		frame.getContentPane().add(btn0); //adding button to frame
 		
@@ -238,7 +238,7 @@ public class Calculator {
 				}
 			}
 		});
-		btntEqual.setFont(new Font("Calibri", Font.BOLD, 19));
+		btntEqual.setFont(new Font("Verdana", Font.BOLD, 19));
 		btntEqual.setBounds(295, 413, 127, 60);
 		frame.getContentPane().add(btntEqual); //adding button to frame
 		
@@ -251,7 +251,7 @@ public class Calculator {
 				operation ="+";
 			}
 		});
-		btnAdd.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnAdd.setFont(new Font("Verdana", Font.BOLD, 19));
 		btnAdd.setBounds(295, 136, 127, 60);
 		frame.getContentPane().add(btnAdd); //adding button to frame
 		
@@ -264,7 +264,7 @@ public class Calculator {
 				operation ="-";
 			}
 		});
-		btnSubtract.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnSubtract.setFont(new Font("Verdana", Font.BOLD, 19));
 		btnSubtract.setBounds(295, 276, 127, 60);
 		frame.getContentPane().add(btnSubtract); //adding button to frame
 		
@@ -277,7 +277,7 @@ public class Calculator {
 				operation ="*";
 			}
 		});
-		btnMultiply.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnMultiply.setFont(new Font("Verdana", Font.BOLD, 19));
 		btnMultiply.setBounds(295, 346, 127, 60);
 		frame.getContentPane().add(btnMultiply); //adding button to frame
 		
@@ -289,7 +289,7 @@ public class Calculator {
 				textField.setText("");
 				operation ="/";}
 		});
-		btnDivide.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnDivide.setFont(new Font("Verdana", Font.BOLD, 19));
 		btnDivide.setBounds(295, 206, 127, 60);
 		frame.getContentPane().add(btnDivide); //adding button to frame
 		
@@ -301,7 +301,7 @@ public class Calculator {
 				lblNewLabel.setText(null);
 			}
 		});
-		btnC.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnC.setFont(new Font("Verdana", Font.BOLD, 19));
 		btnC.setBounds(10, 136, 180, 60);
 		frame.getContentPane().add(btnC); //adding button to frame
 		
@@ -318,7 +318,7 @@ public class Calculator {
 				}
 			}
 		});
-		btnBack.setFont(new Font("Calibri", Font.BOLD, 19));
+		btnBack.setFont(new Font("Verdana", Font.BOLD, 19));
 		btnBack.setBounds(200, 136, 85, 60);
 		frame.getContentPane().add(btnBack); //adding button to frame
 		
